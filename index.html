@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Auto Layout animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button class="toggle is-active" id="table">table</button>
+        <button class="toggle" id="sphere">sphere</button>
+        <button class="toggle" id="helix">helix</button>
+        <button class="toggle" id="grid">grid</button>
+    </div>
+
+    <div id="scene">
+        <div id="scene-content" data-layout="table"></div>
+    </div>
+
+    <template id="element">
+        <button class="element" data-color="0">
+            <div class="element-number"></div>
+            <div class="element-symbol"></div>
+            <div class="element-title"></div>
+        </button>
+    </template>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
